@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>The Last Of Us</title>
+</head>
+<body> 
+    <div class="circulo"></div>
+    
+    <img src="./image/logo1.png" alt="logotipo" class="logo">
+
+    <div class="conteudo">
+
+        <div class="caixa-texto">
+            <h2>Não é só café é um <span>Starbucks</span></h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium deserunt animi deleniti dolorem! Officiis excepturi consequatur minus maxime, magni impedit fuga accusamus, molestiae beatae ratione dolorem, aspernatur corrupti rem! Quam.</p>
+            <button>Deixe um like!</button>
+        </div>
+    
+    <div class="caixa-imagem">
+        <img src="./image/ellie.png" alt="copo Starbucks" class="starbuck">
+
+    </div>
+    
+    </div>
+    
+    <div class="menu">
+        <img src="./image/img-pequena1.png" alt="copoverde" class="copo-pequeno verde">
+        <img src="./image/img-pequena2.png" alt="copoamarelo" class="copo-pequeno amarelo">
+        <img src="./image/img-pequena3.png" alt="coporosa" class="copo-pequeno rosa">
+    </div>
+
+
+</body>
+
+    <script>
+        let circulo = document.querySelector(".circulo")
+        let copogrande = document.querySelector(".starbuck")
+        let verde = document.querySelector(".verde")
+        let amarelo = document.querySelector(".amarelo")
+        let rosa = document.querySelector(".rosa")
+
+        verde.addEventListener("click", ()=>{
+            copogrande.src ="./image/ellie.png"
+            circulo.style.background ="#017143"
+        })
+
+        amarelo.addEventListener("click", ()=>{
+            copogrande.src ="./image/joel.png"
+            circulo.style.background ="#f1fa8c"
+        })
+
+        rosa.addEventListener("click", ()=>{
+            copogrande.src ="./image/abby.webp"
+            circulo.style.background ="#eb7495"
+        })
+    </script>
+
+
+</html>
